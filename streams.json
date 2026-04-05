@@ -1,0 +1,26 @@
+{
+  "lofi": [
+    { "name": "Lofi Hip Hop Radio", "url": "https://streams.ilovemusic.de/iloveradio17.mp3" },
+    { "name": "Chillhop Radio", "url": "https://stream.zeno.fm/fyn8eh3h5f8uv" },
+    { "name": "I Love Chillhop", "url": "https://www.ilovemusic.de/ilovechillhop.m3u" }
+  ],
+  "english": [
+    { "name": "I Love Radio (Top Hits)", "url": "https://ilovemusic.de/iloveradio.m3u" },
+    { "name": "I Love Greatest Hits", "url": "https://www.ilovemusic.de/ilovegreatesthits.m3u" },
+    { "name": "I Love Top 100", "url": "https://www.ilovemusic.de/ilovetop100charts.m3u" }
+  ],
+  "hiphop": [
+    { "name": "I Love Hip Hop", "url": "https://www.ilovemusic.de/ilovehiphop.m3u" },
+    { "name": "I Love US Rap", "url": "https://www.ilovemusic.de/iloveusonlyrapradio.m3u" },
+    { "name": "Hip Hop Radio", "url": "https://stream.zeno.fm/f3wvbbqmdg8uv" }
+  ],
+  "chill": [
+    { "name": "I Love Music & Chill", "url": "https://www.ilovemusic.de/ilovemusicandchill.m3u" },
+    { "name": "I Love Chillout Beats", "url": "https://www.ilovemusic.de/ilovechilloutbeats.m3u" },
+    { "name": "I Love The Beach", "url": "https://www.ilovemusic.de/ilovethebeach.m3u" }
+  ],
+  "bollywood": [
+    { "name": "Radio Hungama Bollywood", "url": "http://103.16.47.70:7222/" },
+    { "name": "Radio Hungama 90s", "url": "http://103.16.47.70:7444/" }
+  ]
+}
