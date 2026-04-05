@@ -1,37 +1,49 @@
-const fs = require('fs'); 
-const path  = require('path');
-const {spawn} = require('child_process'); 
-const extensionPath = process.argv[2]  || __dirname;
+const fs = require('fs');
+const path = require('path');
+const { spawn } = require('child_process');
+const extensionPath = process.argv[2] || __dirname;
 
-const binaryPath = path.join(extensionPath,'bin','mpg123.exe');
-
-const streams = JSON.parse(fs.readFileSync(path.join(extensionPath,'streams.json')));
+const binaryPath = path.join(extensionPath, 'bin', 'mpg123.exe');
+let streams = null;
+async function loadStreams() {
+  try {
+    const response = await fetch('https://raw.githubusercontent.com/nikhilchoukseyy/terminal_music_player_vscode_extension/refs/heads/main/streams.json');
+    const data = await response.json();
+    console.log('✅ Streams loaded from remote');
+    return data;
+  } catch (err) {
+    console.log('⚠️ Remote fetch failed, using local...');
+    return JSON.parse(fs.readFileSync(path.join(extensionPath, 'streams.json'), 'utf-8'));
+  }
+}
 
 let player = null;
 let state = 'genre'
-let currentGenre = null; 
+let currentGenre = null;
 
-showGenreScreen();
+(async () => {
+  streams = await loadStreams();
+  showGenreScreen();
+})();
 
 process.stdin.setRawMode(true);
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
-process.stdin.on('data', (key) =>{
-  if(state === 'genre'){
-    if (key === 'l' ) playGenre('lofi'); 
+process.stdin.on('data', (key) => {
+  if (state === 'genre') {
+    if (key === 'l') playGenre('lofi');
     if (key === 's') showSongsScreen()
-  }else if (state === 'songs') {
-    if (key === '1') playGenre('bollywood');
-    if (key === '2') playGenre('english');
-    if (key === '3') playGenre('hiphop');
-    if (key === '4') playGenre('chill');
-  } 
+  } else if (state === 'songs') {
+    if (key === '1') playGenre('english');
+    if (key === '2') playGenre('hiphop');
+    if (key === '3') playGenre('chill');
+  }
   else if (state === 'playing') {
     if (key === 'n') nextSong();
     if (key === 'q') { player.kill(); process.exit(); }
   }
-} );
+});
 
 
 function playGenre(genre) {
@@ -75,8 +87,8 @@ function showSongsScreen() {
   console.log('\x1b[36m┌─────────────────────────────────┐\x1b[0m');
   console.log('\x1b[36m│\x1b[0m      🎵  SELECT SONGS          \x1b[36m│\x1b[0m');
   console.log('\x1b[36m├─────────────────────────────────┤\x1b[0m');
-  console.log('\x1b[36m│\x1b[0m  [1] Bollywood  [2] English    \x1b[36m│\x1b[0m');
-  console.log('\x1b[36m│\x1b[0m  [3] HipHop     [4] Chill      \x1b[36m│\x1b[0m');
+  console.log('\x1b[36m│\x1b[0m  [1] English    \x1b[36m│\x1b[0m');
+  console.log('\x1b[36m│\x1b[0m  [2] HipHop     [3] Chill      \x1b[36m│\x1b[0m');
   console.log('\x1b[36m└─────────────────────────────────┘\x1b[0m');
 }
 

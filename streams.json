@@ -19,8 +19,5 @@
     { "name": "I Love Chillout Beats", "url": "https://www.ilovemusic.de/ilovechilloutbeats.m3u" },
     { "name": "I Love The Beach", "url": "https://www.ilovemusic.de/ilovethebeach.m3u" }
   ],
-  "bollywood": [
-    { "name": "Radio Hungama Bollywood", "url": "http://103.16.47.70:7222/" },
-    { "name": "Radio Hungama 90s", "url": "http://103.16.47.70:7444/" }
-  ]
+  
 }
