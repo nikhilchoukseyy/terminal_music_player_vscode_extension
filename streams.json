@@ -1,23 +1,32 @@
 {
   "lofi": [
-    { "name": "Lofi Hip Hop Radio", "url": "https://streams.ilovemusic.de/iloveradio17.mp3" },
-    { "name": "Chillhop Radio", "url": "https://stream.zeno.fm/fyn8eh3h5f8uv" },
-    { "name": "I Love Chillhop", "url": "https://www.ilovemusic.de/ilovechillhop.m3u" }
+    { "name": "Chillhop", "url": "https://streams.ilovemusic.de/iloveradio17.mp3" },
+    { "name": "Music & Chill", "url": "https://streams.ilovemusic.de/iloveradio10.mp3" },
+    { "name": "The Sun", "url": "https://streams.ilovemusic.de/iloveradio15.mp3" },
+    { "name": "Sugar Radio", "url": "https://streams.ilovemusic.de/iloveradio18.mp3" }
   ],
   "english": [
-    { "name": "I Love Radio (Top Hits)", "url": "https://ilovemusic.de/iloveradio.m3u" },
-    { "name": "I Love Greatest Hits", "url": "https://www.ilovemusic.de/ilovegreatesthits.m3u" },
-    { "name": "I Love Top 100", "url": "https://www.ilovemusic.de/ilovetop100charts.m3u" }
+    { "name": "Top 100 Charts", "url": "https://streams.ilovemusic.de/iloveradio9.mp3" },
+    { "name": "I Love Radio", "url": "https://streams.ilovemusic.de/iloveradio1.mp3" },
+    { "name": "Biggest Pop Hits", "url": "https://streams.ilovemusic.de/iloveradio11.mp3" },
+    { "name": "Greatest Hits", "url": "https://streams.ilovemusic.de/iloveradio16.mp3" },
+    { "name": "The 90s", "url": "https://streams.ilovemusic.de/iloveradio24.mp3" },
+    { "name": "Hits History", "url": "https://streams.ilovemusic.de/iloveradio12.mp3" }
   ],
   "hiphop": [
-    { "name": "I Love Hip Hop", "url": "https://www.ilovemusic.de/ilovehiphop.m3u" },
-    { "name": "I Love US Rap", "url": "https://www.ilovemusic.de/iloveusonlyrapradio.m3u" },
-    { "name": "Hip Hop Radio", "url": "https://stream.zeno.fm/f3wvbbqmdg8uv" }
+    { "name": "Hip Hop", "url": "https://streams.ilovemusic.de/iloveradio3.mp3" },
+    { "name": "US Only Rap", "url": "https://streams.ilovemusic.de/iloveradio13.mp3" },
+    { "name": "Hip Hop History", "url": "https://streams.ilovemusic.de/iloveradio27.mp3" },
+    { "name": "Bass By HBZ", "url": "https://streams.ilovemusic.de/iloveradio29.mp3" },
+    { "name": "Party Hard", "url": "https://streams.ilovemusic.de/iloveradio14.mp3" },
+    { "name": "Mainstage", "url": "https://streams.ilovemusic.de/iloveradio22.mp3" }
   ],
   "chill": [
-    { "name": "I Love Music & Chill", "url": "https://www.ilovemusic.de/ilovemusicandchill.m3u" },
-    { "name": "I Love Chillout Beats", "url": "https://www.ilovemusic.de/ilovechilloutbeats.m3u" },
-    { "name": "I Love The Beach", "url": "https://www.ilovemusic.de/ilovethebeach.m3u" }
+    { "name": "Music & Chill", "url": "https://streams.ilovemusic.de/iloveradio10.mp3" },
+    { "name": "The Beach", "url": "https://streams.ilovemusic.de/iloveradio7.mp3" },
+    { "name": "The Sun", "url": "https://streams.ilovemusic.de/iloveradio15.mp3" },
+    { "name": "Sugar Radio", "url": "https://streams.ilovemusic.de/iloveradio18.mp3" },
+    { "name": "Dance History", "url": "https://streams.ilovemusic.de/iloveradio26.mp3" },
+    { "name": "Workout", "url": "https://streams.ilovemusic.de/iloveradio23.mp3" }
   ]
-  
 }
